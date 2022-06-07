@@ -1,0 +1,59 @@
+.main-login-flex{
+    height: 100vh;
+    display: flex;
+}
+.login-div1{
+    height: 100vh;
+    width: 50%;
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(rgba(59,182,213,0.9),rgba(255,255,255,0.4))
+}
+.background-div{
+    background-image: url(../assets/Web\ Security.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+}
+.login-div2{
+    height: 100vh;
+    width: 50%;
+    background-image: linear-gradient(rgba(59,182,213,0.9),rgba(255,255,255,0.4));
+    position: relative;
+}
+.login-heading{
+    position: absolute;
+    top: 32%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%);
+}
+.login-form{
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%);
+    width: 50%;
+    background-image: radial-gradient(rgba(59,182,213,0.9),rgba(59,182,213,0.4));
+    border-radius: 10px;
+}
+.frmldiv{
+    width: 100%;
+    margin: 2rem auto;
+}
+.frmldiv input{
+    width: 80%;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+}
+.frmldiv button{
+    width: 80%;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+}
