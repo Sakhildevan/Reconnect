@@ -30,7 +30,7 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     left: 6.5%; 
-    background-image: linear-gradient(rgba(59,182,213,0.4),rgba(59,182,213,0.9)),url('../assets/Authentication.png');
+    background-image: linear-gradient(rgba(57, 182, 213, 0.4),rgba(59,182,213,0.9)),url('../assets/Authentication.png');
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 10px;

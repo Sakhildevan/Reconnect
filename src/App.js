@@ -3,6 +3,7 @@ import ContactUs from './Contact Us/contactus';
 import Aboutus from './About Us/aboutus';
 import Signup from './Signup/Signup';
 import Login from './Login/login';
+import Home from './Home/home';
 function App() {
   return (
     <div className="App">
@@ -10,6 +11,7 @@ function App() {
       <ContactUs />
       <Signup />
       <Login />
+      <Home />
     </div>
   );
 }
