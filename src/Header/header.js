@@ -1,6 +1,7 @@
 import React from 'react'
 import './header.css'
 import Button from '@mui/material/Button'
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <>
@@ -12,11 +13,11 @@ function Header() {
                     </div>
                 </div>
                 <div className='main-menus'>
-                    <div><Button variant="text">About Us</Button></div>
+                    <div><Button variant="text"><Link to={'/aboutus'}>About Us</Link></Button></div>
                     <div><Button variant="text">Alumini</Button></div>
-                    <div><Button variant="text">Contact Us</Button></div>
-                    <div><Button variant="text">Login</Button></div>
-                    <div><Button variant="text">Sign Up</Button></div>
+                    <div><Button variant="text"><Link to={'/contactus'}>Contact Us</Link></Button></div>
+                    <div><Button variant="text"><Link to={'/login'}>Logi In</Link></Button></div>
+                    <div><Button variant="text"><Link to={'/signup'}>Sign Up</Link></Button></div>
                 </div>
             </div>
         </nav>

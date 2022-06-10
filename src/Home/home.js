@@ -2,12 +2,14 @@ import React from 'react'
 import './home.css'
 import himg1 from '../assets/png.png'
 import Button from '@mui/material/Button'
+import Header from '../Header/header'
 function Home() {
   return (
     <>
+        <Header />
         <div className='home-main-div'>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
-                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,122.7C96,149,192,203,288,229.3C384,256,480,256,576,240C672,224,768,192,864,154.7C960,117,1056,75,1152,80C1248,85,1344,139,1392,165.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="0.8" d="M0,288L40,256C80,224,160,160,240,144C320,128,400,160,480,192C560,224,640,256,720,277.3C800,299,880,309,960,304C1040,299,1120,277,1200,266.7C1280,256,1360,256,1400,256L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
             </svg>
             <div className='home-main-div-flex'>
                 <div className='home-main-div-flex-text'>
