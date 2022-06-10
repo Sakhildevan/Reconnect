@@ -1,5 +1,7 @@
 import React from 'react'
 import './home.css'
+import himg1 from '../assets/png.png'
+import Button from '@mui/material/Button'
 function Home() {
   return (
     <>
@@ -12,11 +14,11 @@ function Home() {
                     <div className='home-main-div-flex-text-inner'>
                         <h1>Reconnect with your memories</h1>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius iure, maiores, aspernatur nostrum vero itaque, ab libero in sint commodi repellat explicabo officia! Esse ea velit iure recusandae, quasi commodi!</p>
-                        <button>Register</button>
+                        <Button variant="outlined">Register</Button>
                     </div>
                 </div>
                 <div className='home-main-div-flex-image'>
-
+                    <img src={himg1} alt="group-of-people" />
                 </div>
             </div>
         </div>

@@ -25,7 +25,7 @@ function Login() {
                         <button>Login</button>
                     </div>
                     <div className='frmldiv'>
-                        <a href="#">Forget Password ?</a>
+                        <a href="https://www.google.com">Forget Password ?</a>
                     </div>
                 </form>
             </div>

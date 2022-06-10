@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Signup.css'
-import Simg1 from '../assets/Authentication.png'
+// import Simg1 from '../assets/Authentication.png'
 function Signup() {
 const [showSsignup,setshowSsignup]=useState(false);
 const [showAsignup,setshowAsignup]=useState(false);
