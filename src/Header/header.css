@@ -12,7 +12,7 @@
     /* opacity: 0.7; */
     z-index: 1;
     user-select: none;
-    border: 1px solid black;
+    border: 1px solid green;
     align-items: center;
     height: 5rem;
     display: grid;
