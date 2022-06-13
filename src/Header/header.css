@@ -34,9 +34,7 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 2.5rem;
 }
-.main-menus{
-    /* margin-right: 100px; */
-}
+
 .main-menus div{
     display: inline-block;
     margin: 0.5rem;

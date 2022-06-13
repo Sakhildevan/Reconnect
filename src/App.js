@@ -4,6 +4,7 @@ import Aboutus from './About Us/aboutus';
 import Signup from './Signup/Signup';
 import Login from './Login/login';
 import Home from './Home/home';
+import Events from './Events/Events';
 import {
   BrowserRouter,
   Routes,
@@ -19,6 +20,7 @@ function App() {
           <Route path='/contactus' element={<ContactUs />}></Route>
           <Route path='/signup' element={<Signup />}></Route>
           <Route path='/login' element={<Login />}></Route>
+          <Route path='/event' element={<Events />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

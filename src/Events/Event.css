@@ -1,0 +1,16 @@
+.events-main-div{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(16, 241, 214,0.6),rgba(255,255,255,0.5))
+}
+.events-main-div-heading h1{
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #00012C;
+    border: 1px solid black;
+    padding-top: 2rem;
+}
+.events-main-flex{
+    height: 80vh;
+    border: 1px solid red;
+}
