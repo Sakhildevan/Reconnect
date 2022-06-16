@@ -25,7 +25,7 @@
 .Contactus-icon-image-div{
     height: 200px;
     width: 200px;
-    background-color: #3BB6D5;
+    background-color: #BF5CCD;
     margin: 1rem;
 }
 .Contactus-icon-image-div img{
@@ -88,19 +88,20 @@
     display: grid;
     place-items: center;
     width: 60%;
-    background-color: #92DCE5;
+    background-color: #722D90;
 }
 .ContactUs-main-flex-div2-Contactformdiv{
     height: 80%;
     width: 100%;
 }
 .Contact-form-heading{
-    font-family: 'Irish Grover';
+    font-family: sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 30px;
     line-height: 77px;
-    color: #000000;
+    color: #ffffff;
+    opacity: 0.9;
     margin-bottom: 2rem;
 }
 .Contact-form-heading h2{
@@ -130,6 +131,8 @@
 }
 .form-reason textarea{
     width: 50%;
+    border: none;
+    border-radius: 10px;
 }
 .form-button{
     margin-bottom: 2rem;
@@ -140,5 +143,11 @@
     height: 100%;
     border: none;
     width: 25%;
-    border-radius: 2px;
+    border-radius: 1px;
+    background-color: #BF5CCD;
+    color: white;
+    opacity: 0.9;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
 }

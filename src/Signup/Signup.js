@@ -10,7 +10,7 @@ const [showMessage,setshowMessage]=useState(true);
     <div className='Signup-main-div-flex'>
         <div className='signup-div1'>
             <div>
-                <h1 className='head'>Sgin Up</h1>
+                <h1 className='head'>Sign Up</h1>
                 <div className='padding-div'>
                     <div><h2 style={{color:'#1B365C'}}>Category</h2></div>
                     <div>

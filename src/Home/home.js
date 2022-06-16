@@ -1,8 +1,9 @@
 import React from 'react'
 import './home.css'
-import himg1 from '../assets/png.png'
 import Button from '@mui/material/Button'
 import Header from '../Header/header'
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <>
@@ -20,7 +21,26 @@ function Home() {
                     </div>
                 </div>
                 <div className='home-main-div-flex-image'>
-                    <img src={himg1} alt="group-of-people" />
+                    <div className='login-form'>
+                        <div className='login-heading'>
+                            <h1>Member Login</h1>
+                        </div>
+                        <form action="">
+                            <div className='frmldiv'>
+                                <input type="text" name='username' id='username' placeholder=' Username'/>
+                            </div>
+                            <div className='frmldiv'>
+                                <input type="password" name='password' id='lpaswrd' placeholder=' Password'/>
+                            </div>
+                            <div className='frmldiv'>
+                                <Button variant="contained">Login</Button>
+                            </div>
+                            <div className='frmldiv-flex'>
+                                <a href="https://www.google.com" className='llink'>Forget Password ?</a>
+                                <Link to={'/event'} className='llink'>Don't have an account?</Link>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

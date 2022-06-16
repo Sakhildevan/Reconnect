@@ -13,12 +13,9 @@ function Header() {
                     </div>
                 </div>
                 <div className='main-menus'>
-                    <div><Button variant="text"><Link to={'/aboutus'}>About Us</Link></Button></div>
-                    <div><Button variant="text">Alumini</Button></div>
-                    <div><Button variant="text"><Link to={'/event'}>Events</Link></Button></div>
-                    <div><Button variant="text"><Link to={'/contactus'}>Contact Us</Link></Button></div>
-                    <div><Button variant="text"><Link to={'/login'}>Logi In</Link></Button></div>
-                    <div><Button variant="text"><Link to={'/signup'}>Sign Up</Link></Button></div>
+                    <div><Button variant="text"><Link to={'/alumini'} className='hdbtn'>Alumini</Link></Button></div>
+                    <div><Button variant="text"><Link to={'/aboutus'} className='hdbtn'>About Us</Link></Button></div>
+                    <div><Button variant="text"><Link to={'/contactus'} className='hdbtn'>Contact Us</Link></Button></div>
                 </div>
             </div>
         </nav>

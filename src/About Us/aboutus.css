@@ -7,13 +7,12 @@
 }
 .about-us-container-flex-div1{
     width: 50%;
-    background-color: #3BB6D5;
+    background-color: #722D90;
     position: relative;
 }
 .about-us-container-flex-div2{
     width: 50%;
-    background-color: 
-    #194866;
+    background-color: #BF5CCD;
     display: grid;
     place-items: center;
 }
@@ -35,16 +34,16 @@
     width: 90%;
 }
 .about-us-container-flex-div1 h2{
-font-family: 'Irish Grover'; 
+font-family: sans-serif; 
 font-style: normal;
 font-weight: 400;
-font-size: 64px;
+font-size: 2.5rem;
 line-height: 77px;
 color: #FFFFFF;
 text-align: left;
 margin: 0;
 padding: 0;
-margin-bottom: 1rem;
+margin-bottom: 0.1rem;
 }
 .about-us-container-flex-div1-text-paragraph{
 font-family: 'Irish Grover';
