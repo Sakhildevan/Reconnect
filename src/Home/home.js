@@ -21,7 +21,7 @@ function Home() {
                     </div>
                 </div>
                 <div className='home-main-div-flex-image'>
-                    <div className='login-form'>
+                    <div className='login-form uk-animation-fade'>
                         <div className='login-heading'>
                             <h1>Member Login</h1>
                         </div>
