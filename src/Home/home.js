@@ -37,7 +37,7 @@ function Home() {
                             </div>
                             <div className='frmldiv-flex'>
                                 <a href="https://www.google.com" className='llink'>Forget Password ?</a>
-                                <Link to={'/event'} className='llink'>Don't have an account?</Link>
+                                <Link to={'/signup'} className='llink'>Don't have an account?</Link>
                             </div>
                         </form>
                     </div>
