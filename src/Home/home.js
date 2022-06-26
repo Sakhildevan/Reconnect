@@ -3,6 +3,7 @@ import './home.css'
 import Button from '@mui/material/Button'
 import Header from '../Header/header'
 import { Link } from "react-router-dom";
+import Footer from '../Footer/footer';
 
 function Home() {
   return (
@@ -44,6 +45,7 @@ function Home() {
                 </div>
             </div>
         </div>
+        <Footer />
     </>
   )
 }
