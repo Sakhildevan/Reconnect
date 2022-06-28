@@ -173,6 +173,7 @@ svg{
   }
   .home-sec-img-div{
     height: 100%;
+    background-image: linear-gradient(to right,rgba(64, 5, 88, 0.911),rgba(198, 64, 218, 0.979));
   }
   .home-sec-text-div p{
     text-align: justify;
@@ -189,8 +190,19 @@ svg{
     border-radius: 5px;
     height: 100% !important;
     object-fit: cover !important;
+    opacity: 0.8;
   }
   .home-section1 h1{
     font-weight: 600;
     margin-bottom: 2rem;
+  }
+  .home-section2{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .home-section2-main-flex{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
   }

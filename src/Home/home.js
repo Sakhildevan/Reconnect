@@ -6,8 +6,10 @@ import { Link } from "react-router-dom";
 import Footer from '../Footer/footer';
 import Grid from '@mui/material/Grid';
 import himg1 from '../assets/thumb-1920-932313.jpg'
-
+import CountUp from 'react-countup';
+import useCountUp from 'react-countup';
 function Home() {
+    
   return (
     <>
         <Header />
@@ -61,6 +63,43 @@ function Home() {
                     </div>
                 </Grid>
             </Grid>
+        </div>
+        <div className='home-section2'>
+            <div className='home-section2-main-flex'>
+                <div>
+                    <h1>
+                        <CountUp end={200} />
+                    </h1>
+                </div>
+                <div>
+                    <h1>
+                        <CountUp end={200} />
+                    </h1> 
+                </div>
+                <div>
+                    <h1>
+                        <CountUp end={200} />
+                    </h1> 
+                </div>
+                <div>
+                    <h1>
+                        <CountUp end={200} />
+                    </h1> 
+                </div>
+                <div>
+                    <CountUp
+                          start={-875.039}
+                          end={160527.012}                        
+                    >
+                        {({ countUpRef, start }) => (
+                            <div>
+                                <span ref={countUpRef} />
+                                <button onWheel={start}>Start</button>
+                            </div>
+                        )}
+                    </CountUp>
+                </div>
+            </div>
         </div>
         <Footer />
     </>
