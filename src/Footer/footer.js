@@ -39,19 +39,17 @@ function Footer() {
                         <p>India,</p>
                         <p>Ph:79472</p>
                         <p>Email:ugbvw@gmail.com</p>
+                        <div className='ozy'>
+                            <img src={fimg1} alt="social" />
+                            <img src={fimg2} alt="social" />
+                            <img src={fimg3} alt="social" />
+                            <img src={fimg4} alt="social" />
+                            <img src={fimg5} alt="social" />
+                        </div>
                     </div>
                 </div>
             </div>
             <div className='copy-social-media'>
-                <div className='social-media-icons'>
-                    <div className='social-media-inner-div'>
-                        <img src={fimg1} alt="social" />
-                        <img src={fimg2} alt="social" />
-                        <img src={fimg3} alt="social" />
-                        <img src={fimg4} alt="social" />
-                        <img src={fimg5} alt="social" />
-                    </div>
-                </div>
                 <div className='copyright-text'>
                     <p>©2021-2022 Reconnect. All Rights Reserved.</p>
                 </div>                

@@ -60,6 +60,9 @@
 .hdbtn{
     font-weight: 500 !important;
     transition: 1s;
+    text-transform: none;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
 }
 .hdbtn::after{
     content: '';
