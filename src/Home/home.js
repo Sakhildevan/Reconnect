@@ -7,9 +7,9 @@ import Footer from '../Footer/footer';
 import Grid from '@mui/material/Grid';
 import himg1 from '../assets/thumb-1920-932313.jpg'
 import CountUp from 'react-countup';
-import useCountUp from 'react-countup';
+// import { useCountUp } from 'react-countup';
 function Home() {
-    
+//    let { start }=useCountUp({duration:5,end:1000})
   return (
     <>
         <Header />
@@ -66,38 +66,66 @@ function Home() {
         </div>
         <div className='home-section2'>
             <div className='home-section2-main-flex'>
-                <div>
+                <div className='counter-div'>
                     <h1>
-                        <CountUp end={200} />
+                        <CountUp
+                            start={0}
+                            end={200}                        
+                        >
+                            {({ countUpRef, start }) => (
+                                <div onMouseEnter={start}>
+                                    <span ref={countUpRef} />
+                                </div>
+                            )}
+                        </CountUp>
+                        <h3>Students</h3>
                     </h1>
                 </div>
-                <div>
+                <div className='counter-div'>
                     <h1>
-                        <CountUp end={200} />
-                    </h1> 
+                        <CountUp
+                            start={0}
+                            end={200}                        
+                        >
+                            {({ countUpRef, start }) => (
+                                <div onMouseEnter={start}>
+                                    <span ref={countUpRef} />
+                                </div>
+                            )}
+                        </CountUp>
+                        <h3>Alumini</h3> 
+                    </h1>
                 </div>
-                <div>
+                <div className='counter-div'>
                     <h1>
-                        <CountUp end={200} />
-                    </h1> 
-                </div>
-                <div>
-                    <h1>
-                        <CountUp end={200} />
-                    </h1> 
-                </div>
-                <div>
-                    <CountUp
-                          start={-875.039}
-                          end={160527.012}                        
-                    >
+                        <CountUp
+                        start={0}
+                        end={200}
+                        suffix="+"                        
+                        >
                         {({ countUpRef, start }) => (
-                            <div>
+                            <div onMouseEnter={start}>
                                 <span ref={countUpRef} />
-                                <button onWheel={start}>Start</button>
                             </div>
                         )}
-                    </CountUp>
+                        </CountUp>
+                        <h3>Speakers</h3>
+                    </h1> 
+                </div>
+                <div className='counter-div'>
+                    <h1>
+                        <CountUp
+                            start={0}
+                            end={200}                        
+                        >
+                            {({ countUpRef, start }) => (
+                                <div onMouseEnter={start}>
+                                    <span ref={countUpRef} />
+                                </div>
+                            )}
+                        </CountUp>
+                        <h3>Faculty</h3>
+                    </h1> 
                 </div>
             </div>
         </div>
