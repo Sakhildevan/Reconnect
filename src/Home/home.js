@@ -7,6 +7,9 @@ import Footer from '../Footer/footer';
 import Grid from '@mui/material/Grid';
 import himg1 from '../assets/thumb-1920-932313.jpg'
 import CountUp from 'react-countup';
+import himg2 from '../assets/user-regular.svg'
+import himg3 from '../assets/graduation-cap-solid.svg'
+import himg4 from '../assets/chalkboard-user-solid.svg'
 // import { useCountUp } from 'react-countup';
 function Home() {
 //    let { start }=useCountUp({duration:5,end:1000})
@@ -67,10 +70,12 @@ function Home() {
         <div className='home-section2'>
             <div className='home-section2-main-flex'>
                 <div className='counter-div'>
+                    <img src={himg2} alt="" />
                     <h1>
                         <CountUp
                             start={0}
-                            end={200}                        
+                            end={2000}
+                            suffix="+"                        
                         >
                             {({ countUpRef, start }) => (
                                 <div onMouseEnter={start}>
@@ -82,10 +87,12 @@ function Home() {
                     </h1>
                 </div>
                 <div className='counter-div'>
+                    <img src={himg3} alt="" />
                     <h1>
                         <CountUp
                             start={0}
-                            end={200}                        
+                            end={1500}
+                            suffix="+"                        
                         >
                             {({ countUpRef, start }) => (
                                 <div onMouseEnter={start}>
@@ -97,10 +104,11 @@ function Home() {
                     </h1>
                 </div>
                 <div className='counter-div'>
+                    <img src={himg4} alt="" />
                     <h1>
                         <CountUp
                         start={0}
-                        end={200}
+                        end={300}
                         suffix="+"                        
                         >
                         {({ countUpRef, start }) => (
@@ -109,25 +117,13 @@ function Home() {
                             </div>
                         )}
                         </CountUp>
-                        <h3>Speakers</h3>
-                    </h1> 
-                </div>
-                <div className='counter-div'>
-                    <h1>
-                        <CountUp
-                            start={0}
-                            end={200}                        
-                        >
-                            {({ countUpRef, start }) => (
-                                <div onMouseEnter={start}>
-                                    <span ref={countUpRef} />
-                                </div>
-                            )}
-                        </CountUp>
                         <h3>Faculty</h3>
                     </h1> 
                 </div>
             </div>
+        </div>
+        <div className='home-section-3'>
+
         </div>
         <Footer />
     </>

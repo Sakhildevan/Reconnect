@@ -199,21 +199,21 @@ svg{
     margin-top: 1rem;
   }
   .home-section2{
-    width: 100%;
-    margin: 2rem auto;
+    width: 98%;
+    margin: 4rem auto;
   }
   .home-section2-main-flex{
     width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .counter-div{
-    background-color: red;
+    background-image: linear-gradient(rgba(198, 64, 218, 0.979),rgba(64, 5, 88, 0.911));
     display: grid;
     place-items: center;
-    height: 20vh;
-    width: 20vw;
+    height: 30vh;
+    width: 30vw;
     border-bottom: 5px solid greenyellow;
     border-radius: 10px;
   }
@@ -226,4 +226,11 @@ svg{
     margin: 0;
     padding: 0;
     color: white;
+  }
+  .counter-div img{
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    display: block;
   }
