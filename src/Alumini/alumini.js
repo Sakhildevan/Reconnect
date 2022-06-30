@@ -18,7 +18,7 @@ function Alumini() {
       <div className='alumini-main-text-div'>
         <div className='alumini-main-text-div-inner uk-animation-slide-bottom' tabindex="0">
           <div className='alumini-main-text-div-inner-head'>
-            <h1>OUR ALUMINIS ARE WORKING</h1>
+            <h1>OUR ALUMNIS ARE WORKING</h1>
             <h1>AT FORTUNE 500 COMPANIES</h1>
           </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur necessitatibus maiores aspernatur quod nobis, saepe neque laudantium similique vero reprehenderit! Obcaecati repudiandae debitis veniam rem facere quod harum velit doloremque?</p>

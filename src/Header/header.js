@@ -13,7 +13,7 @@ function Header() {
                     </div>
                 </div>
                 <div className='main-menus'>
-                    <div><Button variant="text"><Link to={'/alumini'} className='hdbtn'>Alumini</Link></Button></div>
+                    <div><Button variant="text"><Link to={'/alumini'} className='hdbtn'>Alumni</Link></Button></div>
                     <div><Button variant="text"><Link to={'/aboutus'} className='hdbtn'>About Us</Link></Button></div>
                     <div><Button variant="text"><Link to={'/contactus'} className='hdbtn'>Contact Us</Link></Button></div>
                 </div>
