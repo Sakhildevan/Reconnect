@@ -1,8 +1,11 @@
 import React from 'react'
 import './aboutus.css'
 import aboutimg1 from '../assets/crunch-time-concept-in-flat-cartoon-design-overworked-man-and-woman-working-in-office-late-at-night-business-deadline-overtime-stress-at-work-illustration-with-people-scene-background-vector.webp';
+import aimg2 from '../assets/download.jpg'
+import aimg3 from '../assets/download (1).jpg'
 function Aboutus() {
   return (
+    <>
     <div className='about-us-container-flex'>
         <div className='about-us-container-flex-div1'>
             <div className='about-us-container-flex-div1-text'>
@@ -20,6 +23,11 @@ function Aboutus() {
             </div>
         </div>
     </div>
+    <div className='uoih'>
+        <img src={aimg2} alt="" />
+        <img src={aimg3} alt="" />
+    </div>
+    </>
   )
 }
 
