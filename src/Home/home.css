@@ -210,8 +210,8 @@ svg{
   }
   .counter-div{
     background-image: linear-gradient(rgba(198, 64, 218, 0.979),rgba(64, 5, 88, 0.911));
-    display: grid;
-    place-items: center;
+    /* display: grid;
+    place-items: center; */
     height: 30vh;
     width: 30vw;
     border-bottom: 5px solid greenyellow;
@@ -232,5 +232,13 @@ svg{
     width: 50px;
     margin: 0;
     padding: 0;
-    display: block;
+    display: inline;
+    margin-top: 5vh;
+  }
+  .home-section-3{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .css-uym98a-MuiImageList-root{    
+    margin: 3rem auto;
   }
