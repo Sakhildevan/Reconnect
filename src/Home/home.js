@@ -12,10 +12,10 @@ import himg3 from '../assets/graduation-cap-solid.svg'
 import himg4 from '../assets/chalkboard-user-solid.svg'
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
-import IconButton from '@mui/material/IconButton';
-import StarBorderIcon from '@mui/icons-material/StarBorder';
-import { useCountUp } from 'react-countup';
+// import ImageListItemBar from '@mui/material/ImageListItemBar';
+// import IconButton from '@mui/material/IconButton';
+// import StarBorderIcon from '@mui/icons-material/StarBorder';
+// import { useCountUp } from 'react-countup';
 import himg5 from '../assets/download (1).jpg'
 import himg6 from '../assets/download (2).jpg'
 import himg7 from '../assets/download (3).jpg'
@@ -154,7 +154,7 @@ const itemData = [
             />
             </ImageListItem>
         ))}
-    </ImageList>
+        </ImageList>
         </div>
         <Footer />
     </>

@@ -12,7 +12,7 @@
     margin: 0 auto;
     position: relative;
     /* background-image: linear-gradient(rgba(27, 54, 92,0.8),rgba(59,182,213,0.9)); */
-    background-image: linear-gradient(rgba(64, 5, 88, 0.911),rgba(198, 64, 218, 0.979));
+    background-image: linear-gradient(rgba(140, 13, 190, 0.911),rgba(229, 170, 238, 0.979));
 }
 .signup-div2{
     height: 100vh;
@@ -20,7 +20,7 @@
     width: 60%;
     margin: 0 auto;
     /* background-image: linear-gradient(rgba(59,182,213,0.4),rgba(59,182,213,0.9)); */
-    background-image: linear-gradient(rgba(64, 5, 88, 0.911),rgba(198, 64, 218, 0.979));
+    background-image: linear-gradient(rgba(140, 13, 190, 0.911),rgba(229, 170, 238, 0.979));
     display: grid;
     place-items: center;
 }
@@ -51,6 +51,10 @@
 .but1 button{
     height: 2rem;
     width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #1b6fe4;
+    color: white;
 }
 .signup-student-form{
     width: 50%;
