@@ -85,3 +85,8 @@ a{
     text-decoration: none !important;
     color: white !important;
 }
+@media (max-width:600px){
+    .main-nav{
+        display: none;
+    }
+}

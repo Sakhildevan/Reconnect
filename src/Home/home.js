@@ -38,6 +38,7 @@ const itemData = [
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#fff" fill-opacity="1" d="M0,288L40,256C80,224,160,160,240,144C320,128,400,160,480,192C560,224,640,256,720,277.3C800,299,880,309,960,304C1040,299,1120,277,1200,266.7C1280,256,1360,256,1400,256L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
             </svg>
+            
             <div className='home-main-div-flex'>
                 <div className='home-main-div-flex-text'>
                     <div className='home-main-div-flex-text-inner'>
@@ -72,7 +73,7 @@ const itemData = [
         </div>
         <div className='home-section1'>
             <Grid container spacing={2}>
-                <Grid item xs={6} md={6} lg={6} className='hjkl'>
+                <Grid item xs={12} md={6} lg={6} className='hjkl'>
                     <div className='home-sec-img-div'>
                         <img src={himg1} alt="jkl" />
                     </div>
@@ -102,7 +103,7 @@ const itemData = [
                                 </div>
                             )}
                         </CountUp>
-                        <h3>Students</h3>
+                        <p>Students</p>
                     </h1>
                 </div>
                 <div className='counter-div'>
@@ -120,7 +121,7 @@ const itemData = [
                                 </div>
                             )}
                         </CountUp>
-                        <h3>Alumini</h3> 
+                        <p>Alumini</p> 
                     </h1>
                 </div>
                 <div className='counter-div'>
@@ -138,7 +139,7 @@ const itemData = [
                             </div>
                         )}
                         </CountUp>
-                        <h3>Faculty</h3>
+                        <p>Faculty</p>
                     </h1> 
                 </div>
             </div>
@@ -146,7 +147,7 @@ const itemData = [
         <div className='home-section-3'>
         <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
         {itemData.map((item) => (
-            <ImageListItem key={item.img}>
+            <ImageListItem key={itemData[item]}>
             <img
                 src={item} 
                 alt={item.title}
