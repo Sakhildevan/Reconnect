@@ -103,7 +103,7 @@ const itemData = [
                                 </div>
                             )}
                         </CountUp>
-                        <p>Students</p>
+                        <h3>Students</h3>
                     </h1>
                 </div>
                 <div className='counter-div'>
@@ -121,7 +121,7 @@ const itemData = [
                                 </div>
                             )}
                         </CountUp>
-                        <p>Alumini</p> 
+                        <h3>Alumini</h3> 
                     </h1>
                 </div>
                 <div className='counter-div'>
@@ -139,7 +139,7 @@ const itemData = [
                             </div>
                         )}
                         </CountUp>
-                        <p>Faculty</p>
+                        <h3>Faculty</h3>
                     </h1> 
                 </div>
             </div>

@@ -1,153 +1,113 @@
-.ContactUs-main-flex{
-    background-color: #ffffff;
-    display: flex;
-}
-.ContactUs-main-flex-div1{
-    height: 100vh;
-    width: 40%;
-    position: relative;
-}
-.ooo{
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    right: -10%;
-}
-.ContactUs-main-flex-div1-flex1{
-    display: flex;
+.contactUs-main-div{
     width: 100%;
-}
-.Contactus-row1{
-    width: 40%;
     margin: 0 auto;
+    background-image: linear-gradient(to right,rgba(64, 5, 88, 0.911),rgba(188, 161, 192, 0.979));
+    padding-bottom: 2rem;
 }
-.Contactus-icon-image-div{
-    height: 200px;
-    width: 200px;
-    background-color: #BF5CCD;
-    margin: 1rem;
-}
-.Contactus-icon-image-div img{
-    height: 30px;
-    width: 30px;
-    margin: 1rem;
-    color: #ffffff;
-}
-.Contactus-icon-image-div p{
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    line-height: 1.5rem;
-    font-size: 12px;
-    font-weight: 600;
-    color: white;
-}
-.ContactUs-main-flex-div1-flex2{
-    display: flex;
-    width: 100%;
-}
-.Contactus-row2{
-    width: 40%;
-    margin: 0 auto;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.ContactUs-main-flex-div2{
-    display: grid;
-    place-items: center;
-    width: 60%;
+.ContactUs-content-text-div{
     background-color: #722D90;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 3px 1px;
 }
-.ContactUs-main-flex-div2-Contactformdiv{
-    height: 80%;
+.contact-us-heading1{
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+}
+.contact-us-heading1 h1{
+    color: white;
+    padding-top: 1rem;
+}
+.contact-us-heading2{
     width: 100%;
+    margin: 0 auto;
+    text-align: left;
 }
-.Contact-form-heading{
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 77px;
-    color: #ffffff;
+.contact-us-heading2 h3{
+    color: white;
+    font-weight: 600;
     opacity: 0.9;
-    margin-bottom: 2rem;
+    font-size: 35px;
 }
-.Contact-form-heading h2{
+.locationdiv{
+    color: white;
+    padding: 2px;
+    margin-right: 10%;
+}
+.contactUs-content-flex{
+    display: flex;
+    color: #ffffff;
+    width: 100%;
+    justify-content: space-between;
+}
+.contactUs-content-flex-div1{
+    text-align: left;
+}
+.contactUs-content-flex-div2{
+    text-align: left;
+}
+.contactUs-content-flex-div1 p{
     margin: 0;
     padding: 0;
+    margin-bottom: 10px;
 }
-.form-name{
-    margin-bottom: 2rem;
-    height: 3rem;
+.contactUs-content-flex-div2 p{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
 }
-.form-name input{
-    height: 3rem;
-    width: 50%;
-    border: none;
+.locationdiv img{
+    height: 80px;
+    width: 80px;
 }
-.form-email{
-    margin-bottom: 2rem;
-    height: 3rem;
+.lll{
+    margin: 1rem;
 }
-.form-email input{
-    height: 3rem;
-    width: 50%;
-    border: none;
+.lll img{
+    height: 20px;
+    width: 20px;
 }
-.form-reason{
-    margin-bottom: 2rem;
-}
-.form-reason textarea{
-    width: 50%;
-    border: none;
-    border-radius: 10px;
-}
-.form-button{
-    margin-bottom: 2rem;
-    height: 3rem;
-    margin-top: 3rem;
-}
-.form-button button{
-    height: 100%;
-    border: none;
-    width: 25%;
-    border-radius: 1px;
+.form-div-contact-us{
+    width: 90%;
+    margin: 0 auto;
     background-color: #BF5CCD;
-    color: white;
-    opacity: 0.9;
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 0px 0px 3px 1px;
+}
+.form-div1{
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-around;
+}
+.form-div2{
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-around;
+}
+.form-div1 input{
+    height: 2rem;
+    width: 45%;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.form-div2 input{
+    height: 2rem;
+    width: 45%;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid grey;
+}
+.form-div3{
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-around;
+}
+.form-div3 textarea{
+    width: 95%;
+    border-radius: 5px;
 }

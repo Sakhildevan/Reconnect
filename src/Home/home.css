@@ -284,7 +284,7 @@ svg{
     .home-sec-img-div{
         display: block !important;
         width: 90% !important;
-        margin: 1rem auto !important;
+        margin: 0 auto !important;
     }
     .home-sec-text-div{
         width: 90% !important;
@@ -302,6 +302,16 @@ svg{
     .counter-div{
         width: 90%;
         margin: 2rem auto;
+    }
+    .MuiImageList-root{
+        width: 90%;
+        margin: 0 auto;
+        height: 400px;
+    }
+    .home-section-3{
+        width: 90%;
+        margin: 0 auto;
+        overflow-x: scroll;
     }
 
   }
