@@ -2,6 +2,7 @@ import React from 'react'
 import './alumini.css'
 import Grid from '@mui/material/Grid';
 import bg1 from '../assets/background.jpg'
+import Footer from '../Footer/footer';
 import Aos from  'aos';
 import "aos/dist/aos.css";
 import "../../node_modules/aos/dist/aos.css"
@@ -26,7 +27,7 @@ function Alumini() {
       </div>
       <div className='oooo'>
         <Grid container spacing={2}>
-          <Grid item xs={6} md={3}  data-aos="fade-up">
+          <Grid item xs={12} md={3}  data-aos="fade-up">
             <div className="uk-card uk-card-default">
               <div class="uk-card-media-top">
                 <img src={bg1} width="1800" height="1200" alt=""></img>
@@ -37,7 +38,7 @@ function Alumini() {
               </div>
             </div>
           </Grid>
-          <Grid item xs={6} md={3}  data-aos="fade-up">
+          <Grid item xs={12} md={3}  data-aos="fade-up">
             <div className="uk-card uk-card-default">
               <div className="uk-card-media-top">
                 <img src={bg1} width="1800" height="1200" alt=""></img>
@@ -48,7 +49,7 @@ function Alumini() {
               </div>
             </div>
           </Grid>
-          <Grid item xs={6} md={3}  data-aos="fade-up">
+          <Grid item xs={12} md={3}  data-aos="fade-up">
             <div className="uk-card uk-card-default">
               <div className="uk-card-media-top">
                 <img src={bg1} width="1800" height="1200" alt=""></img>
@@ -59,7 +60,7 @@ function Alumini() {
               </div>
             </div>
           </Grid>
-          <Grid item xs={6} md={3}  data-aos="fade-up">
+          <Grid item xs={12} md={3}  data-aos="fade-up">
             <div className="uk-card uk-card-default">
               <div className="uk-card-media-top">
                 <img src={bg1} width="1800" height="1200" alt=""></img>
@@ -70,7 +71,7 @@ function Alumini() {
               </div>
             </div>
           </Grid>
-          <Grid item xs={6} md={3}  data-aos="fade-up">
+          <Grid item xs={12} md={3}  data-aos="fade-up">
             <div className="uk-card uk-card-default">
               <div className="uk-card-media-top">
                 <img src={bg1} width="1800" height="1200" alt=""></img>
@@ -81,7 +82,7 @@ function Alumini() {
               </div>
             </div>
           </Grid>
-          <Grid item xs={6} md={3}  data-aos="fade-up">
+          <Grid item xs={12} md={3}  data-aos="fade-up">
             <div className="uk-card uk-card-default">
               <div className="uk-card-media-top">
                 <img src={bg1} width="1800" height="1200" alt=""></img>
@@ -92,7 +93,7 @@ function Alumini() {
               </div>
             </div>
           </Grid>
-          <Grid item xs={6} md={3}  data-aos="fade-up">
+          <Grid item xs={12} md={3}  data-aos="fade-up">
             <div className="uk-card uk-card-default">
               <div className="uk-card-media-top">
                 <img src={bg1} width="1800" height="1200" alt=""></img>
@@ -103,7 +104,7 @@ function Alumini() {
               </div>
             </div>
           </Grid>
-          <Grid item xs={6} md={3}  data-aos="fade-up">
+          <Grid item xs={12} md={3}  data-aos="fade-up">
             <div className="uk-card uk-card-default">
               <div className="uk-card-media-top">
                 <img src={bg1} width="1800" height="1200" alt=""></img>
@@ -115,7 +116,7 @@ function Alumini() {
               </div>
             </div>
           </Grid>
-          <Grid item xs={6} md={3}  data-aos="fade-up">
+          <Grid item xs={12} md={3}  data-aos="fade-up">
             <div class="uk-card uk-card-default">
               <div class="uk-card-media-top">
                 <img src={bg1} width="1800" height="1200" alt=""></img>
@@ -126,7 +127,7 @@ function Alumini() {
               </div>
             </div>
           </Grid>
-          <Grid item xs={6} md={3}  data-aos="fade-up">
+          <Grid item xs={12} md={3}  data-aos="fade-up">
             <div class="uk-card uk-card-default">
               <div class="uk-card-media-top">
                 <img src={bg1} width="1800" height="1200" alt=""></img>
@@ -137,7 +138,7 @@ function Alumini() {
               </div>
             </div>
           </Grid>
-          <Grid item xs={6} md={3}  data-aos="fade-up">
+          <Grid item xs={12} md={3}  data-aos="fade-up">
             <div class="uk-card uk-card-default">
               <div class="uk-card-media-top">
                 <img src={bg1} width="1800" height="1200" alt=""></img>
@@ -148,7 +149,7 @@ function Alumini() {
               </div>
             </div>
           </Grid>
-          <Grid item xs={6} md={3}  data-aos="fade-up">
+          <Grid item xs={12} md={3}  data-aos="fade-up">
             <div class="uk-card uk-card-default">
               <div class="uk-card-media-top">
                 <img src={bg1} width="1800" height="1200" alt=""></img>
@@ -161,6 +162,7 @@ function Alumini() {
           </Grid>                                                                              
         </Grid>
       </div>
+      <Footer />
     </>
   )
 }

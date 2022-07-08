@@ -5,6 +5,7 @@ import Contactimg2 from '../assets/phone-solid.svg'
 import Contactimg3 from '../assets/mobile-screen-solid.svg'
 import Contactimg4 from '../assets/envelope-solid.svg'
 import Footer from '../Footer/footer';
+import Button from '@mui/material/Button'
 function ContactUs() {
   return (
     <>
@@ -23,8 +24,8 @@ function ContactUs() {
                         <p>&nbsp; Kollam, Kerala-690525</p>
                     </div>
                     <div className='contactUs-content-flex-div2'>
-                        <p><span className='lll'><img src={Contactimg2} alt="phone" /></span>+919745626449</p>
-                        <p><span className='lll'><img src={Contactimg3} alt="phone" /></span>+919754848449</p>
+                        <p><span className='lll'><img src={Contactimg2} alt="phone" /></span>+919745626449&nbsp;&nbsp;</p>
+                        <p><span className='lll'><img src={Contactimg3} alt="phone" /></span>+919754848449&nbsp;&nbsp;</p>
                         <p><span className='lll'><img src={Contactimg4} alt="phone" /></span>jkkjhl@123</p>
                     </div>
                     <div className='locationdiv'>
@@ -46,6 +47,14 @@ function ContactUs() {
                     </div>
                     <div className='form-div3'>
                         <textarea name="message" id="message" cols="30" rows="10" placeholder=' Message:'></textarea>
+                    </div>
+                    <div className='ContactUs-Button-div'>
+                        <div className='contact-us-empty-div'>
+
+                        </div>
+                        <div className='ContactUs-Button-div-button'>
+                            <Button variant="contained" className='jklkkk'>Send</Button>
+                        </div>
                     </div>
                 </form>
             </div>

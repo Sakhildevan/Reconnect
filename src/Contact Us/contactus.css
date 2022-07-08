@@ -18,6 +18,8 @@
 .contact-us-heading1 h1{
     color: white;
     padding-top: 1rem;
+    font-size: 45px;
+    font-weight: 500;
 }
 .contact-us-heading2{
     width: 100%;
@@ -26,7 +28,7 @@
 }
 .contact-us-heading2 h3{
     color: white;
-    font-weight: 600;
+    font-weight: 400;
     opacity: 0.9;
     font-size: 35px;
 }
@@ -110,4 +112,30 @@
 .form-div3 textarea{
     width: 95%;
     border-radius: 5px;
+}
+.ContactUs-Button-div{
+    width: 76%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-us-empty-div{
+    width: 80%;
+}
+.ContactUs-Button-div-button{
+    width: 20%;
+}
+.jklkkk{
+    width: 100% !important;
+}
+@media (max-width:600px){
+    .locationdiv{
+        display: none;
+    }
+}
+@media (max-width:405px){
+    .contactUs-content-flex{
+        display: block;
+        padding-bottom: 0.4rem;
+    }
 }
