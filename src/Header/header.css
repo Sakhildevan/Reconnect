@@ -85,8 +85,36 @@ a{
     text-decoration: none !important;
     color: white !important;
 }
+.guhh{
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    display: none;
+}
+.empty-header-div{
+    display: none;
+}
+.Mobile-menu{
+    width: 100%;
+    border: 1px solid red;
+    height: 100vh;
+    background-image: linear-gradient(to right,rgba(64, 5, 88),rgba(198, 64, 218));
+}
 @media (max-width:600px){
-    .main-nav{
+    .main-logo-div{
         display: none;
     }
+    .main-menus{
+        display: none;
+    }
+    .main-nav{
+        background-image: linear-gradient(to right,rgba(64, 5, 88, 0.911),rgba(198, 64, 218, 0.979));
+    }
+    .guhh{
+        display: block;
+    }
+    .empty-header-div{
+        display: block;
+    }
+
 }

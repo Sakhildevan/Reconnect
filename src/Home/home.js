@@ -157,7 +157,9 @@ const itemData = [
         ))}
         </ImageList>
         </div>
-        <Footer />
+        <div className='hfooter'>
+            <Footer />
+        </div>
     </>
   )
 }

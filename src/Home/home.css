@@ -249,11 +249,15 @@ svg{
     box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
   }
-
-
+  .hfooter{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
   @media (max-width:600px){
     .home-main-div{
         height:auto;
+        margin-top: 5rem;
     }
     .home-main-div-flex{
         display: block;
