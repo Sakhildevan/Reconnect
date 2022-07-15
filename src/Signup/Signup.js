@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Signup.css'
+import Header from '../Header/header'
 // import Simg1 from '../assets/Authentication.png'
 function Signup() {
 const [showSsignup,setshowSsignup]=useState(false);
@@ -7,7 +8,10 @@ const [showAsignup,setshowAsignup]=useState(false);
 const [showAdsignup,setshowAdsignup]=useState(false);
 const [showMessage,setshowMessage]=useState(true);
   return (
+    <>
+    
     <div className='Signup-main-div-flex'>
+    <Header></Header>
         <div className='signup-div1'>
             <div>
                 <h1 className='head'>Sign Up</h1>
@@ -202,6 +206,7 @@ const [showMessage,setshowMessage]=useState(true);
             :null}
         </div>
     </div>
+    </>
   )
 }
 

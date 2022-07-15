@@ -128,6 +128,11 @@
 .jklkkk{
     width: 100% !important;
 }
+.ddd{
+    position: relative !important;
+    height: 80px;
+    background-image: linear-gradient(to right,rgba(64, 5, 88),rgba(198, 64, 218));
+}
 @media (max-width:600px){
     .locationdiv{
         display: none;

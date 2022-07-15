@@ -6,9 +6,13 @@ import Contactimg3 from '../assets/mobile-screen-solid.svg'
 import Contactimg4 from '../assets/envelope-solid.svg'
 import Footer from '../Footer/footer';
 import Button from '@mui/material/Button'
+import Header from '../Header/header'
 function ContactUs() {
   return (
     <>
+        {/* <div className='ddd'>
+            <Header></Header>
+        </div> */}
         <div className='contactUs-main-div'>
             <div className='contact-us-heading1'>
                 <h1>Contact Us</h1>

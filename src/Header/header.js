@@ -3,9 +3,75 @@ import './header.css'
 import Button from '@mui/material/Button'
 import { Link } from "react-router-dom";
 import himg1 from '../assets/bars-solid.svg';
-import { useState } from 'react';
+import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemText from '@mui/material/ListItemText';
 function Header() {
-const [showNav,setshowNav]=useState(false);
+    
+const [state, setState] = React.useState({
+    top: false,
+    left: false,
+    bottom: false,
+    right: false,
+  });
+
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      return;
+    }
+
+    setState({ ...state, [anchor]: open });
+  };
+
+  const list = (anchor) => (
+    <Box
+    sx={{ width:250 }}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}
+    >
+      <List>
+          <ListItem key={1} disablePadding>
+            <ListItemButton>
+              <ListItemText>
+                <Link to={'/'} className='hdbtn'>Home</Link>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+      </List>
+      <List>
+          <ListItem key={2} disablePadding>
+            <ListItemButton>
+              <ListItemText>
+                <Link to={'/aboutus'} className='hdbtn'>About Us</Link>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+      </List>
+      <List>
+          <ListItem key={3} disablePadding>
+            <ListItemButton>
+              <ListItemText>
+              <Link to={'/contactus'} className='hdbtn'>Contact Us</Link>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+      </List>
+      <List>
+          <ListItem key={4} disablePadding>
+            <ListItemButton>
+              <ListItemText>
+              <Link to={'/alumini'} className='hdbtn'>Alumni</Link>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+      </List>
+    </Box>
+  );
+
   return (
     <>
         <nav className='main-nav'>
@@ -21,24 +87,26 @@ const [showNav,setshowNav]=useState(false);
                     <div><Button variant="text"><Link to={'/contactus'} className='hdbtn'>Contact Us</Link></Button></div>
                 </div>
                 <div className='empty-header-div'></div>
-                <Button variant="text"><div className='guhh' onClick={()=>{setshowNav(!showNav)}}>
+                <Button variant="text" className='muiheadbtn'><div className='guhh'>
                     <img src={himg1} alt="" />
+                    <div className='tgl'>
+                        {[''].map((anchor) => (
+                            <React.Fragment >
+                            <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+                            <Drawer
+                                anchor={anchor}
+                                open={state[anchor]}
+                                onClose={toggleDrawer(anchor, false)}
+                            >
+                                {list(anchor)}
+                            </Drawer>
+                            </React.Fragment>
+                        ))}
+                    </div> 
                 </div></Button>
             </div>
-            {showNav?<div className='Mobile-menu'>
-                    <div className='hed-btn-div'>
-                        <Button variant="text">Home</Button>
-                    </div>
-                    <div className='hed-btn-div'>
-                        <Button variant="text">Home</Button>
-                    </div>
-                    <div className='hed-btn-div'>
-                        <Button variant="text">Home</Button>                
-                    </div>
-            </div>:null}
         </nav>
     </>
   )
 }
-
 export default Header 

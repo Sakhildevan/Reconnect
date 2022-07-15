@@ -4,9 +4,11 @@ import aboutimg1 from '../assets/crunch-time-concept-in-flat-cartoon-design-over
 import aimg3 from '../assets/Amrita_student.jpg'
 import aimg4 from '../assets/envydt.webp'
 import Footer from '../Footer/footer';
+import Header from '../Header/header'
 function Aboutus() {
   return (
     <>
+    <Header></Header>
     <div className='about-us-container-flex'>
         <div className='about-us-container-flex-div1'>
             <div className='about-us-container-flex-div1-text'>

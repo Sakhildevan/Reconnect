@@ -7,12 +7,14 @@ import Aos from  'aos';
 import "aos/dist/aos.css";
 import "../../node_modules/aos/dist/aos.css"
 import {useEffect} from 'react';
+import Header from '../Header/header'
 function Alumini() {
     useEffect(() => {
       Aos.init({duration:1000});
   },[]);
   return (
     <>
+        <Header></Header>
       <div className='alumini-main-div'>
           <img src={bg1} alt=""  className='bg-image'/>
       </div>

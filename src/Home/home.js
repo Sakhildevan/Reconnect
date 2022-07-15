@@ -12,10 +12,6 @@ import himg3 from '../assets/graduation-cap-solid.svg'
 import himg4 from '../assets/chalkboard-user-solid.svg'
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-// import ImageListItemBar from '@mui/material/ImageListItemBar';
-// import IconButton from '@mui/material/IconButton';
-// import StarBorderIcon from '@mui/icons-material/StarBorder';
-// import { useCountUp } from 'react-countup';
 import himg5 from '../assets/download (1).jpg'
 import himg6 from '../assets/download (2).jpg'
 import himg7 from '../assets/download (3).jpg'
@@ -25,15 +21,33 @@ import himg10 from '../assets/download.jpg'
 import himg11 from '../assets/images (1).jpg'
 import himg12 from '../assets/images (2).jpg'
 import himg13 from '../assets/images.jpg'
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 function Home() {
 const itemData = [
     himg5,himg6,himg7,himg8,himg9,himg10,himg11,himg12,himg13
   ];
+  const [show,setShow]=useState(false)
+  const controlNavbar=()=>{
+      if(window.scrollY > 60){
+          setShow(false)
+          console.log('hello');
+      }
+      else{
+          setShow(true)
+      }
+  }
+  useEffect(()=>{
+      window.addEventListener('scroll',controlNavbar)
+      return()=>{
+          window.removeEventListener('scroll',controlNavbar)
+      }
+  },[])
     
   return (
     <>
-        <Header />
+        {show?<Header />:null} 
         <div className='home-main-div'>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#fff" fill-opacity="1" d="M0,288L40,256C80,224,160,160,240,144C320,128,400,160,480,192C560,224,640,256,720,277.3C800,299,880,309,960,304C1040,299,1120,277,1200,266.7C1280,256,1360,256,1400,256L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
@@ -121,7 +135,7 @@ const itemData = [
                                 </div>
                             )}
                         </CountUp>
-                        <h3>Alumini</h3> 
+                        <h3>Alumni</h3> 
                     </h1>
                 </div>
                 <div className='counter-div'>

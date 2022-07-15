@@ -90,15 +90,40 @@ a{
     width: 40px;
     align-items: center;
     display: none;
+    position: relative;
 }
 .empty-header-div{
     display: none;
 }
 .Mobile-menu{
     width: 100%;
+    margin: 0 auto;
     border: 1px solid red;
-    height: 100vh;
     background-image: linear-gradient(to right,rgba(64, 5, 88),rgba(198, 64, 218));
+}
+.muiheadbtn{
+    display: none !important;
+}
+.empty-header-div{
+    display: none;
+}
+.tgl{
+    height: 100% !important;
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.css-n6v7qi-MuiPaper-root-MuiDrawer-paper{
+    background-image: linear-gradient(to left,rgba(198, 64, 218),rgba(64, 5, 88));
+    background-color: rgba(198, 64, 218);
+}
+.css-10hburv-MuiTypography-root{
+    color: white;
+    opacity: 0.7;
+}
+.css-h4y409-MuiList-root:hover{
+    background-color: rgba(198, 64, 218);
 }
 @media (max-width:600px){
     .main-logo-div{
@@ -115,6 +140,9 @@ a{
     }
     .empty-header-div{
         display: block;
+    }
+    .muiheadbtn{
+        display: block !important;
     }
 
 }
