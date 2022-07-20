@@ -225,6 +225,8 @@ svg{
   .home-section-3{
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    border: 1px solid black;
   }
   .css-uym98a-MuiImageList-root{    
     margin: 3rem auto;
@@ -252,7 +254,52 @@ svg{
   .hfooter{
     width: 100%;
     margin: 0 auto;
-    margin-top: 2rem;
+  }
+  .gallery-heading{
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #400558e8;
+    background-color: #c640dafa;
+    /* background-image: linear-gradient(to right,rgba(198, 64, 218, 0.979),rgba(64, 5, 87, 0.91)); */
+    display: flex;
+    align-items: center;
+  }
+  .gallery-heading h1{
+    color: white;
+    opacity: 0.9;
+    margin: 0;
+    padding-top: 0.5rem;
+  }
+  .main-gallery-div{
+    display: flex;
+    align-items: center;
+    background-color: #c640dafa;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .gf-div1{
+    background-color: #c640dafa;
+    width: 50%;
+  }
+  .gf-div2{
+    width: 50%;
+    background-color: #c640dafa;
+  }
+  .gf-div2 img{
+    cursor: pointer;
+  }
+  .gf-div1 img{
+    /* margin: 2.7rem auto; */
+    height: 450px;
+    object-fit: cover;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .jiop{
+    width: 90%;
+    margin: 0 auto;
   }
   @media (max-width:600px){
     .home-main-div{
@@ -316,6 +363,26 @@ svg{
         width: 90%;
         margin: 0 auto;
         overflow-x: scroll;
+    }
+    .main-gallery-div{
+      display: block;
+    }
+    .gf-div1{
+      width: 95%;
+      padding-bottom: 2rem;
+      margin: 0 auto;
+      padding-top: 1rem;
+    }
+    .gf-div2{
+      width: 95%;
+      margin: 0 auto;
+      overflow-x: scroll;
+      padding-bottom: 2rem;
+      background-color: #c640dafa;
+    }
+    .gf-div1 img{
+      width: 100%;
+      margin: 0 auto;
     }
 
   }

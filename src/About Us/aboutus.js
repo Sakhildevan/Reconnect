@@ -8,7 +8,9 @@ import Header from '../Header/header'
 function Aboutus() {
   return (
     <>
-    <Header></Header>
+    <div className='huio'> 
+        <Header></Header>
+    </div>
     <div className='about-us-container-flex'>
         <div className='about-us-container-flex-div1'>
             <div className='about-us-container-flex-div1-text'>

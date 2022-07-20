@@ -56,10 +56,10 @@
     height: 50% !important;
 }
 .uk-card-media-top img{
-    height: 20vh !important;
+    height: 100px !important;
+    width: 100px;
     object-fit: cover;
     border-radius: 50% !important;
-    width: 10vw !important;
     margin-top: 1rem;
 }
 .uk-card-body h3{

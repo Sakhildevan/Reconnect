@@ -25,10 +25,17 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 
 function Home() {
-const itemData = [
-    himg5,himg6,himg7,himg8,himg9,himg10,himg11,himg12,himg13
-  ];
-  const [show,setShow]=useState(false)
+const [showImg1,setShowImg1]=useState(true);
+const [showImg2,setShowImg2]=useState(false);
+const [showImg3,setShowImg3]=useState(false);
+const [showImg4,setShowImg4]=useState(false);
+const [showImg5,setShowImg5]=useState(false);
+const [showImg6,setShowImg6]=useState(false);
+const [showImg7,setShowImg7]=useState(false);
+const [showImg8,setShowImg8]=useState(false);
+const [showImg9,setShowImg9]=useState(false);
+
+  const [show,setShow]=useState(true)
   const controlNavbar=()=>{
       if(window.scrollY > 60){
           setShow(false)
@@ -41,7 +48,7 @@ const itemData = [
   useEffect(()=>{
       window.addEventListener('scroll',controlNavbar)
       return()=>{
-          window.removeEventListener('scroll',controlNavbar)
+        window.removeEventListener('scroll',controlNavbar)
       }
   },[])
     
@@ -158,18 +165,170 @@ const itemData = [
                 </div>
             </div>
         </div>
-        <div className='home-section-3'>
-        <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-        {itemData.map((item) => (
-            <ImageListItem key={itemData[item]}>
-            <img
-                src={item} 
-                alt={item.title}
-                loading="lazy"
-            />
-            </ImageListItem>
-        ))}
-        </ImageList>
+        <div className='gallery-heading'>
+            <div className='jiop'><h1>Gallery</h1></div>
+        </div>
+        <div className='main-gallery-div'>
+            <div className='gf-div1'>
+                {showImg1?<img src={himg5} alt="jh"></img>:null}
+                {showImg2?<img src={himg6} alt="jh"></img>:null}
+                {showImg3?<img src={himg7} alt="jh"></img>:null}
+                {showImg4?<img src={himg8} alt="jh"></img>:null}
+                {showImg5?<img src={himg9} alt="jh"></img>:null}
+                {showImg6?<img src={himg10} alt="jh"></img>:null}
+                {showImg7?<img src={himg11} alt="jh"></img>:null}
+                {showImg8?<img src={himg12} alt="jh"></img>:null}
+                {showImg9?<img src={himg13} alt="jh"></img>:null}
+            </div>
+            <div className='gf-div2'>
+            <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>          
+                    <ImageListItem key={1}>
+                    <img
+                        src={himg5} 
+                        alt="jkl"
+                        loading="lazy"
+                        onMouseEnter={()=>{setShowImg1(true);
+                        setShowImg2(false);
+                        setShowImg3(false);
+                        setShowImg4(false);
+                        setShowImg5(false);
+                        setShowImg6(false);
+                        setShowImg7(false);
+                        setShowImg8(false);
+                        setShowImg9(false);
+                    }}
+                    />
+                    </ImageListItem>
+                    <ImageListItem key={2}>
+                    <img
+                        src={himg6} 
+                        alt="jkl"
+                        loading="lazy"
+                        onMouseEnter={()=>{setShowImg1(false);
+                            setShowImg2(true);
+                            setShowImg3(false);
+                            setShowImg4(false);
+                            setShowImg5(false);
+                            setShowImg6(false);
+                            setShowImg7(false);
+                            setShowImg8(false);
+                            setShowImg9(false);}}
+                    />
+                    </ImageListItem>
+                    <ImageListItem key={3}>
+                    <img
+                        src={himg7} 
+                        alt="jkl"
+                        loading="lazy"
+                        onMouseEnter={()=>{setShowImg1(false);
+                            setShowImg2(false);
+                            setShowImg3(true);
+                            setShowImg4(false);
+                            setShowImg5(false);
+                            setShowImg6(false);
+                            setShowImg7(false);
+                            setShowImg8(false);
+                            setShowImg9(false);}}
+                    />
+                    </ImageListItem>
+                    <ImageListItem key={4}>
+                    <img
+                        src={himg8} 
+                        alt="jkl"
+                        loading="lazy"
+                        onMouseEnter={()=>{setShowImg1(false);
+                            setShowImg2(false);
+                            setShowImg3(false);
+                            setShowImg4(true);
+                            setShowImg5(false);
+                            setShowImg6(false);
+                            setShowImg7(false);
+                            setShowImg8(false);
+                            setShowImg9(false);}}
+                    />
+                    </ImageListItem>
+                    <ImageListItem key={5}>
+                    <img
+                        src={himg9} 
+                        alt="jkl"
+                        loading="lazy"
+                        onMouseEnter={()=>{setShowImg1(false);
+                            setShowImg2(false);
+                            setShowImg3(false);
+                            setShowImg4(false);
+                            setShowImg5(true);
+                            setShowImg6(false);
+                            setShowImg7(false);
+                            setShowImg8(false);
+                            setShowImg9(false);}}
+                    />
+                    </ImageListItem>
+                    <ImageListItem key={6}>
+                    <img
+                        src={himg10} 
+                        alt="jkl"
+                        loading="lazy"
+                        onMouseEnter={()=>{setShowImg1(false);
+                            setShowImg2(false);
+                            setShowImg3(false);
+                            setShowImg4(false);
+                            setShowImg5(false);
+                            setShowImg6(true);
+                            setShowImg7(false);
+                            setShowImg8(false);
+                            setShowImg9(false);}}
+                    />
+                    </ImageListItem>
+                    <ImageListItem key={7}>
+                    <img
+                        src={himg11} 
+                        alt="jkl"
+                        loading="lazy"
+                        onMouseEnter={()=>{setShowImg1(false);
+                            setShowImg2(false);
+                            setShowImg3(false);
+                            setShowImg4(false);
+                            setShowImg5(false);
+                            setShowImg6(false);
+                            setShowImg7(true);
+                            setShowImg8(false);
+                            setShowImg9(false);}}
+                    />
+                    </ImageListItem>
+                    <ImageListItem key={8}>
+                    <img
+                        src={himg12} 
+                        alt="klkj"
+                        loading="lazy"
+                        onMouseEnter={()=>{setShowImg1(false);
+                            setShowImg2(false);
+                            setShowImg3(false);
+                            setShowImg4(false);
+                            setShowImg5(false);
+                            setShowImg6(false);
+                            setShowImg7(false);
+                            setShowImg8(true);
+                            setShowImg9(false);}}
+                    />
+                    </ImageListItem>
+                    <ImageListItem key={9}>
+                    <img
+                        src={himg13} 
+                        alt="jk"
+                        loading="lazy"
+                        onMouseEnter={()=>{setShowImg1(false);
+                            setShowImg2(false);
+                            setShowImg3(false);
+                            setShowImg4(false);
+                            setShowImg5(false);
+                            setShowImg6(false);
+                            setShowImg7(false);
+                            setShowImg8(false);
+                            setShowImg9(true);}}
+                    />
+                    </ImageListItem>
+            </ImageList>
+            </div>
         </div>
         <div className='hfooter'>
             <Footer />

@@ -28,9 +28,9 @@ function ContactUs() {
                         <p>&nbsp; Kollam, Kerala-690525</p>
                     </div>
                     <div className='contactUs-content-flex-div2'>
-                        <p><span className='lll'><img src={Contactimg2} alt="phone" /></span>+919745626449&nbsp;&nbsp;</p>
-                        <p><span className='lll'><img src={Contactimg3} alt="phone" /></span>+919754848449&nbsp;&nbsp;</p>
-                        <p><span className='lll'><img src={Contactimg4} alt="phone" /></span>jkkjhl@123</p>
+                        <p><span className='lll'><img src={Contactimg2} alt="phone" /></span>&nbsp;&nbsp;+919745626449&nbsp;&nbsp;</p>
+                        <p><span className='lll'><img src={Contactimg3} alt="phone" /></span>&nbsp;&nbsp;+919754848449&nbsp;&nbsp;</p>
+                        <p><span className='lll'><img src={Contactimg4} alt="phone" /></span>&nbsp;&nbsp;jkkjhl@123</p>
                     </div>
                     <div className='locationdiv'>
                         <div className='ContactUs-logo-div'>
